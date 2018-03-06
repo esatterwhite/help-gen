@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>help-gen Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.lumen.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">help-gen</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="ModelManager.html">ModelManager</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html">Global</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+    <section class="readme-section">
+        <article><h1>CHANGELOG</h1><h2>2018-02-19, Version 10.0.1 (Stable)</h2><ul>
+<li>[<a href="https://github.com/helpdotcom/help-gen/commit/f6d797ced2">f6d797ced2</a>] - deps: remove nano-prop dependency (Evan Lucas)</li>
+<li>[<a href="https://github.com/helpdotcom/help-gen/commit/8ceb9df70a">8ceb9df70a</a>] - deps: <a href="mailto:rimraf@2.6.2">rimraf@2.6.2</a> (Evan Lucas)</li>
+<li>[<a href="https://github.com/helpdotcom/help-gen/commit/8e10ca9576">8e10ca9576</a>] - package: update urls to point to GitHub (Evan Lucas)</li>
+</ul>
+<h2>2018-02-16, Version 10.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/891e75a637">891e75a637</a>] - ci: build on node 8 as well as 6 (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/92ae185302">92ae185302</a>] - <strong>(SEMVER-MAJOR)</strong> package: add nano-model and nano-prop to tree (Evan Lucas)</li>
+</ul>
+<h2>2017-12-04, Version 9.3.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/0df12d8cf9">0df12d8cf9</a>] - <strong>(SEMVER-MINOR)</strong> types: add support for Prop.array().allowNull() (Evan Lucas)</li>
+</ul>
+<h2>2017-09-26, Version 9.2.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/77653d2b85">77653d2b85</a>] - <strong>(SEMVER-MINOR)</strong> deps: update @helpdotcom/nano-prop to 6.6.2 (Ryan Mottley)</li>
+</ul>
+<h2>2017-09-26, Version 9.1.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/88b7e86fcc">88b7e86fcc</a>] - <strong>(SEMVER-MINOR)</strong> deps: update @helpdotcom/nano-prop to @6.6.1 (Ryan Mottley)</li>
+</ul>
+<h2>2017-09-21, Version 9.0.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/09e2859289">09e2859289</a>] - test: add .object().passthrough() test for failOnExtraneousProperties (Ryan Mottley) <a href="https://helpdotcom.atlassian.net/browse/CHAT-3568">CHAT-3568</a></li>
+</ul>
+<h2>2017-09-18, Version 9.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/8401306992">8401306992</a>] - <strong>(SEMVER-MAJOR)</strong> object: add .passthrough() support (Ryan Mottley) <a href="https://helpdotcom.atlassian.net/browse/CHAT-3568">CHAT-3568</a></li>
+</ul>
+<h2>2017-07-31, Version 8.4.5 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/e878e5d8dd">e878e5d8dd</a>] - types: fix allowNull objects (Stephen Belanger)</li>
+</ul>
+<h2>2017-06-12, Version 8.4.4 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b1b5f22d3d">b1b5f22d3d</a>] - string: fix minimum (Stephen Belanger)</li>
+</ul>
+<h2>2017-06-08, Version 8.4.3 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/4d5702cd0e">4d5702cd0e</a>] - number: fix min warning (Stephen Belanger)</li>
+</ul>
+<h2>2017-06-07, Version 8.4.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f7efca32ed">f7efca32ed</a>] - test: add missing warnings test (Stephen Belanger)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b3ac86fc23">b3ac86fc23</a>] - validator: better warning messages (Stephen Belanger)</li>
+</ul>
+<h2>2017-05-26, Version 8.4.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/6340565cd7">6340565cd7</a>] - number: remove max warning (Stephen Belanger)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/76709b5343">76709b5343</a>] - number: remove number example warning (Stephen Belanger)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/e6af98fd3b">e6af98fd3b</a>] - string,number: failable warnings (Stephen Belanger)</li>
+</ul>
+<h2>2017-04-19, Version 8.4.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/9b870bad45">9b870bad45</a>] - dep: bump nano-prop to ^6.2.0 (Stephen Belanger)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b1619a7360">b1619a7360</a>] - <strong>(SEMVER-MINOR)</strong> types: add &quot;url&quot; type (Stephen Belanger)</li>
+</ul>
+<h2>2017-03-03, Version 8.3.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/01e4eff464">01e4eff464</a>] - deps: @<a href="mailto:helpdotcom/is@2.1.0">helpdotcom/is@2.1.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/54f347282e">54f347282e</a>] - deps: @<a href="mailto:helpdotcom/nano-prop@6.1.0">helpdotcom/nano-prop@6.1.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/0c9079a2ae">0c9079a2ae</a>] - <strong>(SEMVER-MINOR)</strong> types: support allowName() option in email type (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-2199">CHAT-2199</a></li>
+</ul>
+<h2>2017-01-30, Version 8.2.4 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/54f4077261">54f4077261</a>] - deps: <a href="mailto:tap@10.0.0">tap@10.0.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b310fdde08">b310fdde08</a>] - package: run tap in parallel (Evan Lucas)</li>
+</ul>
+<h2>2017-01-24, Version 8.2.3 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/c3ecf84587">c3ecf84587</a>] - regex: use toString() for contentIdentifier (Evan Lucas)</li>
+</ul>
+<h2>2017-01-19, Version 8.2.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/26d840ab82">26d840ab82</a>] - object: fix allowNull for objects (Evan Lucas)</li>
+</ul>
+<h2>2017-01-06, Version 8.2.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a7e3071a7d">a7e3071a7d</a>] - deps: update to <a href="mailto:nano-prop@6.0.0">nano-prop@6.0.0</a> (Anna Henningsen)</li>
+</ul>
+<h2>2017-01-06, Version 8.2.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/0ca85ed3f0">0ca85ed3f0</a>] - lib: remove essentially superfluous <code>variableNames</code> map (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/352495cb80">352495cb80</a>] - lib: remove unused properties (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/c9f523a775">c9f523a775</a>] - lib: turn callback generators into <code>Validator</code> methods (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a3a228eef7">a3a228eef7</a>] - <strong>(SEMVER-MINOR)</strong> validator: more flexible handling of missing props (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/c07ea6da79">c07ea6da79</a>] - <strong>(SEMVER-MINOR)</strong> validator: make error message prefix configurable (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/9cbd6a6ff1">9cbd6a6ff1</a>] - validator: add support for <code>ref</code> props (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/db2ffdb363">db2ffdb363</a>] - <strong>(SEMVER-MINOR)</strong> validator: enable more object cloning options (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/e8406b6de4">e8406b6de4</a>] - validator: allow specifying input variable name (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/cda7ab70b6">cda7ab70b6</a>] - <strong>(SEMVER-MINOR)</strong> validator: add simple merge method for top level var groups (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/e401c62486">e401c62486</a>] - validator: expose code generation pieces (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a93266a681">a93266a681</a>] - <strong>(SEMVER-MINOR)</strong> validator: more flexible code generation (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/1643496cd7">1643496cd7</a>] - validator: more generic interface for top-level var handling (Anna Henningsen)</li>
+</ul>
+<h2>2016-12-14, Version 8.1.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/dcb76562e4">dcb76562e4</a>] - validator: don’t modify external <code>props</code> argument (Anna Henningsen)</li>
+</ul>
+<h2>2016-12-13, Version 8.1.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/48f8472783">48f8472783</a>] - types: don't wrap number check in extra block (Evan Lucas)</li>
+</ul>
+<h2>2016-12-09, Version 8.1.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/0f1760fba3">0f1760fba3</a>] - deps: <a href="mailto:build-ast@2.3.1">build-ast@2.3.1</a> (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/198ed8f842">198ed8f842</a>] - lib: split up and move <code>addCheck</code> out of <code>Validator</code> (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/dcb430134f">dcb430134f</a>] - lib: make <code>Check</code> constructors take single argument (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/3325fa9794">3325fa9794</a>] - lib: use display path for enum variable name determination (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/5d914c0887">5d914c0887</a>] - lib: remove impossible conditional (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/02f9187447">02f9187447</a>] - lib: remove unnecessary indirection of <code>_getHasOwnProperty</code> (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/157dbe1e89">157dbe1e89</a>] - lib: consolidate all <code>_generateOptional</code> blocks (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/571bf18074">571bf18074</a>] - lib: return generated code instead of appending to one builder (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/50722a7957">50722a7957</a>] - test: bring test suite to 100 % coverage (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/cfe0533030">cfe0533030</a>] - test: use <code>common.compile</code> everywhere (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b261e57791">b261e57791</a>] - utils: simplify internal utils (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/2ec3d14c2a">2ec3d14c2a</a>] - <strong>(SEMVER-MINOR)</strong> validator: allow iterating over all check instances (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/2b55753732">2b55753732</a>] - <strong>(SEMVER-MINOR)</strong> validator: add failOnExtraneousProperties option (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/2154fa0b2e">2154fa0b2e</a>] - validator: compute loop indices based on parent Checks (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/71bd8c6039">71bd8c6039</a>] - validator: pass display paths for props explicitly (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/61e75ca5a7">61e75ca5a7</a>] - <strong>(SEMVER-MINOR)</strong> validator: add stripExtraneousProperties option (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/d157c6938e">d157c6938e</a>] - validator: more compact code for small enums (Anna Henningsen)</li>
+</ul>
+<h2>2016-11-11, Version 8.0.8 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/fc8409a206">fc8409a206</a>] - lib: replace <code>Transform</code> class by manual passing of <code>path</code> (Anna Henningsen)</li>
+</ul>
+<h2>2016-11-09, Version 8.0.7 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ffe1b5ecf3">ffe1b5ecf3</a>] - lib: elide unused <code>Files#_props</code> property (Anna Henningsen)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/adbbc9f17b">adbbc9f17b</a>] - lib: <code>indexOf() !== -1</code> → <code>includes</code> (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-31, Version 8.0.6 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a3b5223b1b">a3b5223b1b</a>] - lib: remove unused <code>paths</code> and <code>parents</code> properties of <code>Transformer</code> (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-30, Version 8.0.5 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/3a02daeecd">3a02daeecd</a>] - validator: remove unused clone of <code>options</code> (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-28, Version 8.0.4 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/43a4f6e760">43a4f6e760</a>] - deps: remove unused v8is (Evan Lucas)</li>
+</ul>
+<h2>2016-10-25, Version 8.0.3 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ccd3ceafdb">ccd3ceafdb</a>] - test: update tap to v8.0.0 and fix tests (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-25, Version 8.0.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b8201b71b6">b8201b71b6</a>] - lib: remove unused properties from <code>Validator</code> (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-24, Version 8.0.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/30bd3e3068">30bd3e3068</a>] - lib: avoid unnecessary special-casing of array-of-objects (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-21, Version 8.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/512c8c68a6">512c8c68a6</a>] - <strong>(SEMVER-MAJOR)</strong> package: update nano-prop to 4.0.0 (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-20, Version 7.1.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ff13596c36">ff13596c36</a>] - <strong>(SEMVER-MINOR)</strong> validator: support objects (Anna Henningsen)</li>
+</ul>
+<h2>2016-10-18, Version 7.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/cbd0f7a123">cbd0f7a123</a>] - <strong>(SEMVER-MAJOR)</strong> lib: remove all traces of doc generation code (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/aa581111d0">aa581111d0</a>] - <strong>(SEMVER-MAJOR)</strong> package: refactor to support arrays with nested objects (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/baf37bc5ab">baf37bc5ab</a>] - validator: remove unnecessary closure when calling callback (Evan Lucas)</li>
+</ul>
+<h2>2016-09-14, Version 6.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/9bfca1fcfa">9bfca1fcfa</a>] - <strong>(SEMVER-MAJOR)</strong> ci: remove support for node v5 (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/d1967f01e8">d1967f01e8</a>] - <strong>(SEMVER-MAJOR)</strong> deps: @<a href="mailto:helpdotcom/nano-prop@2.0.0">helpdotcom/nano-prop@2.0.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/545da686e0">545da686e0</a>] - validator: add support for allowNull for builtin types (Evan Lucas)</li>
+</ul>
+<h2>2016-08-18, Version 5.0.4 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/99f5a9db99">99f5a9db99</a>] - validator: fix up the lookup path for nested enums (Evan Lucas)</li>
+</ul>
+<h2>2016-08-10, Version 5.0.3 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/bc5ca52b6f">bc5ca52b6f</a>] - deps: <a href="mailto:tap@6.3.0">tap@6.3.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/4111cd1c77">4111cd1c77</a>] - deps: @<a href="mailto:helpdotcom/nano-prop@1.6.0">helpdotcom/nano-prop@1.6.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/7ff44d2703">7ff44d2703</a>] - validator: workaround v8 instanceof bug (Evan Lucas)</li>
+</ul>
+<h2>2016-08-10, Version 5.0.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/fbb0682cda">fbb0682cda</a>] - property: fix generation for NanoProps (Evan Lucas)</li>
+</ul>
+<h2>2016-08-09, Version 5.0.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/839be2ae7a">839be2ae7a</a>] - validator: make sure we require validators for array props (Evan Lucas)</li>
+</ul>
+<h2>2016-08-09, Version 5.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/128fcdc70d">128fcdc70d</a>] - deps: remove @helpdotcom/releaseit (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/91e9ca88eb">91e9ca88eb</a>] - <strong>(SEMVER-MAJOR)</strong> package: remove html doc generation (Evan Lucas)</li>
+</ul>
+<h2>2016-08-08, Version 4.4.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/14558858aa">14558858aa</a>] - docs: fix build-example with nano-props (Evan Lucas)</li>
+</ul>
+<h2>2016-08-05, Version 4.4.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/9e80e62656">9e80e62656</a>] - test: make tests more reliable (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/dfd686619f">dfd686619f</a>] - <strong>(SEMVER-MINOR)</strong> validator: set er.code = 'EINVAL' (Evan Lucas)</li>
+</ul>
+<h2>2016-08-02, Version 4.3.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ba051631ae">ba051631ae</a>] - deps: @<a href="mailto:helpdotcom/nano-prop@1.5.0">helpdotcom/nano-prop@1.5.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/063d432af6">063d432af6</a>] - <strong>(SEMVER-MINOR)</strong> validator: support the allowNull property (Evan Lucas)</li>
+</ul>
+<h2>2016-08-02, Version 4.2.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/eda0b2406e">eda0b2406e</a>] - <strong>(SEMVER-MINOR)</strong> validator: support validating string min and max lengths (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/1cbfe0b967">1cbfe0b967</a>] - validator: fix undefined reference (Evan Lucas)</li>
+</ul>
+<h2>2016-07-30, Version 4.1.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ed45290e48">ed45290e48</a>] - deps: @<a href="mailto:helpdotcom/build-ast@2.0.0">helpdotcom/build-ast@2.0.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f25f016809">f25f016809</a>] - transform-props: force array props to be required when NanoProp (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/5fdd33cad3">5fdd33cad3</a>] - <strong>(SEMVER-MINOR)</strong> validator: support basic array item validation (Evan Lucas)</li>
+</ul>
+<h2>2016-07-29, Version 4.0.5 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/bf3bbe14fe">bf3bbe14fe</a>] - index: lazy load docs (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/c80806e5d3">c80806e5d3</a>] - package: no longer checkin first-mate (Evan Lucas)</li>
+</ul>
+<h2>2016-07-29, Version 4.0.4 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/55bb9e61a9">55bb9e61a9</a>] - ci: switch from quay.io to gcr.io (Evan Lucas)</li>
+</ul>
+<h2>2016-07-19, Version 4.0.3 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/26cb6e6378">26cb6e6378</a>] - docs: fix bug in curl generation (Ryan Mottley)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f3a08cabd3">f3a08cabd3</a>] - test: add test case without input validator (Ryan Mottley)</li>
+</ul>
+<h2>2016-07-19, Version 4.0.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/2665b45bfa">2665b45bfa</a>] - validator: fix generation when invalid identifiers are used as name (Evan Lucas)</li>
+</ul>
+<h2>2016-07-14, Version 4.0.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a873a287d3">a873a287d3</a>] - package: checkin first-mate package (Evan Lucas)</li>
+</ul>
+<h2>2016-07-12, Version 4.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/30ccaffe67">30ccaffe67</a>] - checks: add checkProps() (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f70920fb7d">f70920fb7d</a>] - deps: @helpdotcom/build-ast@latest (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ff94bbde97">ff94bbde97</a>] - deps: @<a href="mailto:helpdotcom/is@1.0.9">helpdotcom/is@1.0.9</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b6e6f6fdb6">b6e6f6fdb6</a>] - deps: @<a href="mailto:helpdotcom/nano-prop@1.1.0">helpdotcom/nano-prop@1.1.0</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/738a0093a2">738a0093a2</a>] - example: remove old examples (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/6a5f3fd85d">6a5f3fd85d</a>] - is-helper: add isArray generator (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/e8f30c9b5b">e8f30c9b5b</a>] - lib: remove path-each (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/62c46d69a7">62c46d69a7</a>] - lib: merge utils and ast (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/6b3b7638d4">6b3b7638d4</a>] - lib: add transform-props module (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a74b9db6bb">a74b9db6bb</a>] - <strong>(SEMVER-MAJOR)</strong> package: add validator generator (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a1418d407a">a1418d407a</a>] - <strong>(SEMVER-MAJOR)</strong> package: remove response validator (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a368a6aa78">a368a6aa78</a>] - <strong>(SEMVER-MAJOR)</strong> package: remove request validator (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/15aaf2fa3d">15aaf2fa3d</a>] - <strong>(SEMVER-MAJOR)</strong> package: remove cli tool (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/9ead8664bd">9ead8664bd</a>] - test: remove old test fixtures (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-639">CHAT-639</a></li>
+</ul>
+<h2>2016-07-12, Version 3.1.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/24f5f9c8b5">24f5f9c8b5</a>] - <strong>(SEMVER-MINOR)</strong> docs: add curl examples to documentation (Rod Machen)</li>
+</ul>
+<h2>2016-06-28, Version 3.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/8ca512c812">8ca512c812</a>] - request: Remove name from error messages (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/5e705e3a25">5e705e3a25</a>] - <strong>(SEMVER-MAJOR)</strong> request,response,docs: remove name as required property (Evan Lucas)</li>
+</ul>
+<h2>2016-06-27, Version 2.1.5 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/52cf285f36">52cf285f36</a>] - docs: use static date and uuid for build-example (Evan Lucas)</li>
+</ul>
+<h2>2016-06-21, Version 2.1.4 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/1c5fcb28e8">1c5fcb28e8</a>] - deps: <a href="mailto:object-path@0.9.2">object-path@0.9.2</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b817fa9e81">b817fa9e81</a>] - docs: fix build-example logic (Evan Lucas)</li>
+</ul>
+<h2>2016-06-07, Version 2.1.3 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f650acd1e3">f650acd1e3</a>] - deps: @<a href="mailto:helpdotcom/build-ast@1.4.1">helpdotcom/build-ast@1.4.1</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a27329af47">a27329af47</a>] - deps: @<a href="mailto:helpdotcom/http@1.5.2">helpdotcom/http@1.5.2</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/149f2bbeb2">149f2bbeb2</a>] - deps: <a href="mailto:lintit@1.0.3">lintit@1.0.3</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/ffd55b8d50">ffd55b8d50</a>] - deps: <a href="mailto:marky-markdown@7.0.1">marky-markdown@7.0.1</a> (Evan Lucas)</li>
+</ul>
+<h2>2016-06-03, Version 2.1.2 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/81afe3f747">81afe3f747</a>] - ci: auto release when pushed to master (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f28ccd3b7f">f28ccd3b7f</a>] - deps: @<a href="mailto:helpdotcom/releaseit@2.0.5">helpdotcom/releaseit@2.0.5</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/d5ca6c156f">d5ca6c156f</a>] - scripts: add release script (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/d96158c98c">d96158c98c</a>] - section: properly format response output in JSON (Evan Lucas)</li>
+</ul>
+<h2>2016-05-26, Version 2.1.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/f068347ec6">f068347ec6</a>] - deps: <a href="mailto:node-uuid@1.4.7">node-uuid@1.4.7</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a06f697a88">a06f697a88</a>] - docs: use build-example in section (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/cbd897a947">cbd897a947</a>] - docs: add build-example module (Evan Lucas)</li>
+</ul>
+<h2>2016-05-23, Version 2.1.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a7cc193304">a7cc193304</a>] - ci: use quay images and test node v5 and v6 (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-460">CHAT-460</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/3af37e5857">3af37e5857</a>] - <strong>(SEMVER-MINOR)</strong> docs: add builtin routes to service docs (Ryan Mottley) </li>
+</ul>
+<h2>2016-05-12, Version 2.0.1 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/6150af5117">6150af5117</a>] - docs: don't break if missing output (Evan Lucas)</li>
+</ul>
+<h2>2016-05-11, Version 2.0.0 (Stable)</h2><ul>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/44b578bd8d">44b578bd8d</a>] - bug: change validator to request (Ryan Mottley)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/c21bdb921e">c21bdb921e</a>] - deps: <a href="mailto:help@2.1.3">help@2.1.3</a> (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/9ac554283a">9ac554283a</a>] - doc: add better docs (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-363">CHAT-363</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/a172ac700d">a172ac700d</a>] - <strong>(SEMVER-MINOR)</strong> docs: add enum support (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-368">CHAT-368</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/4594f187c5">4594f187c5</a>] - lib: remove base_response (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b5aa82aa45">b5aa82aa45</a>] - lib: rename validator to request (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/bcfe6d870b">bcfe6d870b</a>] - lib: check that name is a valid identifier (Evan Lucas)</li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/26dc34a4ed">26dc34a4ed</a>] - lib: add is-helper (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-397">CHAT-397</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/1d32bfb0a6">1d32bfb0a6</a>] - <strong>(SEMVER-MINOR)</strong> lib: breakout genOpts and create generate module (Ryan Mottley) </li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/465dca37a6">465dca37a6</a>] - <strong>(SEMVER-MAJOR)</strong> lib: remove message reader (Evan Lucas) </li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/b665b08826">b665b08826</a>] - <strong>(SEMVER-MINOR)</strong> request: add enum type (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-368">CHAT-368</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/e2cfd87085">e2cfd87085</a>] - <strong>(SEMVER-MINOR)</strong> response: add enum type (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-368">CHAT-368</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/1b645428f1">1b645428f1</a>] - response: move completely to build-ast (Ryan Mottley) <a href="https://helpdotcom.atlassian.net/browse/CHAT-399">CHAT-399</a></li>
+<li>[<a href="https://git.help.com/common-backend/help-gen/commit/0f0ccac9e4">0f0ccac9e4</a>] - validator: switch to build-ast totally (Evan Lucas) <a href="https://helpdotcom.atlassian.net/browse/CHAT-400">CHAT-400</a></li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	Help.com &copy; 2018
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+	
+		on 2018-03-06T08:06:54-06:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

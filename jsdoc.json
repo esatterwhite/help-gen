@@ -1,0 +1,43 @@
+{
+  "source":{
+    "include": [
+      "./gh-pages/help-gen"
+    , "./lib"
+    ,"./gh-pages/README.md"
+    ]
+  , "exclude": [
+      "test/"
+    , "coverage/"
+    , "./**/node_modules/"
+    ]
+  }
+, "tags": {
+    "allowUnknownTags": true
+  }
+, "opts":{
+    "recurse": true
+  , "template": "node_modules/ink-docstrap/template"
+  , "destination": "docs"
+  , "tutorials": "gh-pages/tutorials"
+  }
+, "plugins": [
+    "plugins/markdown"
+  , "plugins/partial"
+  ]
+, "markdown": {
+    "parser": "gfm"
+  , "hardwrap": false
+  }
+, "templates": {
+    "systemName": "help-gen"
+  , "syntaxTheme": "default"
+  , "copyright":  "Help.com &copy; 2018"
+  , "theme": "lumen"
+  , "outputSourceFiles": true
+  , "outputSourcePath": true
+  , "highlightTutorialCode": true
+  , "linenums": false
+  , "includeDate": true
+  , "inverseNav": true
+  }
+}
