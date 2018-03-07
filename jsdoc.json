@@ -29,7 +29,7 @@
   , "hardwrap": false
   }
 , "templates": {
-    "systemName": "help-gen"
+    "systemName": "Help.com Code Gen"
   , "syntaxTheme": "default"
   , "copyright":  "Help.com &copy; 2018"
   , "theme": "lumen"

@@ -1,5 +1,9 @@
+A toolkit for generating extremely fast data validators and models.
+There are three major components:
 
-
+* {@link prop|Prop} - The basic building block for defining
+* {@link ModelManage|Model} - For Data validation and Sanitaion.
+* {@link valiator|Validator} - Generic data validation which can operate asyncronous operations. Generally For http centric tasks
 # CHANGELOG
 
 ## 2018-02-19, Version 10.0.1 (Stable)
