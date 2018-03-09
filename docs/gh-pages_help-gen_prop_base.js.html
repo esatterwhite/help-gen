@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Help.com Code Gen Source: gh-pages/help-gen/prop.js</title>
+	<title>Help.com Code Gen Source: gh-pages/help-gen/prop/base.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,21 +33,21 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li>
+					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li><li><a href="module-help-gen_lib_prop_is-prop.html">help-gen/lib/prop/is-prop</a></li><li><a href="module-help-gen_lib_prop_symbols.html">help-gen/lib/prop/symbols</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="ArrayType.html">ArrayType</a></li><li><a href="DateType.html">DateType</a></li><li><a href="EmailType.html">EmailType</a></li><li><a href="EnumType.html">EnumType</a></li><li><a href="IPType.html">IPType</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberType.html">NumberType</a></li><li><a href="ObjectType.html">ObjectType</a></li><li><a href="Type.html">Type</a></li>
+					<li><a href="ArrayProp.html">ArrayProp</a></li><li><a href="DateProp.html">DateProp</a></li><li><a href="EmailProp.html">EmailProp</a></li><li><a href="EnumProp.html">EnumProp</a></li><li><a href="IPProp.html">IPProp</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberProp.html">NumberProp</a></li><li><a href="ObjectProp.html">ObjectProp</a></li><li><a href="Prop.html">Prop</a></li><li><a href="RefProp.html">RefProp</a></li><li><a href="RegexProp.html">RegexProp</a></li><li><a href="StringProp.html">StringProp</a></li><li><a href="UrlProp.html">UrlProp</a></li><li><a href="UUIDProp.html">UUIDProp</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
+					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop_.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
 				</ul>
 			</li>
 			
@@ -86,32 +86,29 @@
 		<div id="main">
 			
 
-		<h1 class="page-title">Source: gh-pages/help-gen/prop.js</h1>
+		<h1 class="page-title">Source: gh-pages/help-gen/prop/base.js</h1>
     
 <section>
     <article>
         <pre
             class="sunlight-highlight-javascript ">'use strict'
-module.exports = {}
-
-// TypeBase
 
 /**
  * Defines the location of the property to validate and validate.
  * A dot separated object path can be used to quickly define nested object
  * @chainable
- * @method Type#path
+ * @method Prop#path
  * @param {String} path The object path to the property.
- * @returns {Type} this
+ * @returns {Prop} this
  * @example Prop.path('a')
  **/
 
 /**
  * Denotes that the property at the specified path must be preset. Required is the default behavior
  * @chanable
- * @method Type#required
+ * @method Prop#required
  * @param {Boolean} [value=true]
- * @returns {Type} this
+ * @returns {Prop} this
  * @example
  * Prop.path('a').required() // a is required
  * Prop.path('b').required(false) // b is not required
@@ -122,8 +119,8 @@ module.exports = {}
  * Denotes that the property is optional. If the property is present, it must conform to the rules of property.
  * A property that has a value of `undefined` will fail.
  * @chainable
- * @method Type#optional
- * @returns {Type} this
+ * @method Prop#optional
+ * @returns {Prop} this
  * @example
  * Prop.path('a').optional() // a is optional
  * Prop.path('b') // b is required
@@ -133,8 +130,8 @@ module.exports = {}
  * Denotes that the property may be present and contain, specifically, a `null` value in addition to a value that
  * conforms to the rules of the property definition
  * @chainable
- * @method Type#allowNull
- * @returns {Type} this
+ * @method Prop#allowNull
+ * @returns {Prop} this
  * @example
  * Prop.path('a').allowNull() // a is required and _can_ be null
  * Prop.path('b').optional().allowNull() // b is optional or can be null
@@ -143,8 +140,8 @@ module.exports = {}
 /**
  * Denotes that the property must be or contain only unique values
  * @cainable
- * @method Type#unique
- * @returns {Type} this
+ * @method Prop#unique
+ * @returns {Prop} this
  * @example
  * Prop.path('a').unique()
  * Prop.path('b').optional().unique()
@@ -152,131 +149,32 @@ module.exports = {}
 /**
  * Sets a description on the property. Primarily for generating documentation
  * @chainable
- * @method Type#desc
+ * @method Prop#desc
  * @param {String} text A breif description of the property
- * @returns {Type} this
+ * @returns {Prop} this
  * @example
  * Prop.path('a').optiona.desc('The letter a')
  **/
 
 /**
- * Alias for {@link Type#desc|desc}
+ * Alias for {@link Prop#desc|desc}
  * @chainable
- * @method Type#description
- * @alias Type#desc
- * @see Type#desc
+ * @method Prop#description
+ * @alias Prop#desc
+ * @see Prop#desc
  **/
 
 /**
  * Sets an example on the property. Primarily for generating documentationt
  * @chainable
- * @method Type#example
+ * @method Prop#example
  * @param {String} text Sample value expected to be used to populate he property
- * @returns {Type} this
+ * @returns {Prop} this
  * @example
  * Prop.path('a').exmaple('a')
  **/
 
 
-// ArrayType
-
-/**
- * Represents a javascript array containing zero or more uniform data types
- * @cainable
- * @method ArrayType#props
- * @param {Type} prop A property definition of the kind of data the array is allowed to contain
- * @returns {Type} this
- * @example
- * cosnt {Prop} = require('help-gen')
- * Prop.array().path('a').props(Prop.number().min(0)) // and array of positive numbers
- * Prop.array().path('b').props(
- *   Prop.object().props([
- *     Prop.string().path('c').allowNull()
- *   , Prop.number().path('d').optional()
- *   ])
- * )
- **/
-
-// EmailType
-
-/**
- * Allows the email address to contain both the name parts and email envelope
- * @chainable
- * @method EmailType#allowname
- * @returns {Type} this
- * @example
- * Prop.email().path('email') // playerone@help.com
- * Prop.email().path('email').allowName() // '"player One" &lt;playerone@help.com>'
- **/
-
-// EnumType
-
-/**
- * Defines or overrides the allowable values for a property
- * @chainable
- * @method EnumType#values
- * @param {String[]} values The allowable values for the property
- * @returns {Type} this
- * @example Prop.enum().path('a').values(['b', 'c'])
- **/
-
-// IPType
-
-/**
- * Allows for an IPv4 CIDR format
- * @chainable
- * @method IPType#allowCIDR
- * @returns {Type} this
- * @example
- * Prop.ip().path('a') // 192.168.0.5
- * Prop.io().path('b').allowCIDR() // 192.168.10.0/22
- **/
-
-// NumberType
-
-/**
- * Sets the minimum allowable value for the property
- * @chainable
- * @method NumberType#min
- * @param {Number} min The minimum value allowed
- * @returns {Type} this
- * @example
- * Prop.number().path('num').min(0).allowNull()
- **/
-
-/**
- * Sets the maximum allowable value for the property
- * @chainable
- * @method NumberType#min
- * @param {Number} max The maximum value allowed
- * @returns {Type} this
- * @example
- * Prop.number().path('num').max(10).allowNull()
- **/
-
-/**
- * Denotes to allow any and all preperties to remain on the final output object
- * reguardless if they have been defined or not
- * @chainable
- * @method ObjectType#passthrough
- * @returns {Type} this
- * @example
- * Prop.object().path('a').passthrough() // any object will pass
- **/
-
-/**
- * An array of Propery definitions that defines that genaerl schema the object must abide by
- * If this function is not called, {@link ObjectType#passthrough|passthrough} must be called.
- * @chainable
- * @method ObjectType#props
- * @param {Type[]} props An array of property definitions
- * @returns {Type} this
- * @example
- * Prop.object().path('a').props([
- *   Prop.string().path('b').max(100)
- * , Prop.Object().path('c').passthrough()
- * ])
- **/
 </pre>
     </article>
 </section>
@@ -322,7 +220,7 @@ module.exports = {}
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-03-08T21:31:28-05:00
+		on 2018-03-09T09:02:16-06:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

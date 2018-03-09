@@ -18,3 +18,12 @@ module.exports = {}
  * @protected
  * @method ModelManager#_loadConfigs
  **/
+
+/**
+ * Converts an AST into final code and prepares it for export
+ * @protected
+ * @method ModelManager#_addResult
+ * @param {String} name
+ * @param {String} filename
+ * @param {Object} ast
+ **/

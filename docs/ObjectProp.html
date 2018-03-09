@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Help.com Code Gen Class: ObjectType</title>
+	<title>Help.com Code Gen Class: ObjectProp</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,21 +33,21 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li>
+					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li><li><a href="module-help-gen_lib_prop_is-prop.html">help-gen/lib/prop/is-prop</a></li><li><a href="module-help-gen_lib_prop_symbols.html">help-gen/lib/prop/symbols</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="ArrayType.html">ArrayType</a></li><li><a href="DateType.html">DateType</a></li><li><a href="EmailType.html">EmailType</a></li><li><a href="EnumType.html">EnumType</a></li><li><a href="IPType.html">IPType</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberType.html">NumberType</a></li><li><a href="ObjectType.html">ObjectType</a></li><li><a href="Type.html">Type</a></li>
+					<li><a href="ArrayProp.html">ArrayProp</a></li><li><a href="DateProp.html">DateProp</a></li><li><a href="EmailProp.html">EmailProp</a></li><li><a href="EnumProp.html">EnumProp</a></li><li><a href="IPProp.html">IPProp</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberProp.html">NumberProp</a></li><li><a href="ObjectProp.html">ObjectProp</a></li><li><a href="Prop.html">Prop</a></li><li><a href="RefProp.html">RefProp</a></li><li><a href="RegexProp.html">RegexProp</a></li><li><a href="StringProp.html">StringProp</a></li><li><a href="UrlProp.html">UrlProp</a></li><li><a href="UUIDProp.html">UUIDProp</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
+					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop_.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
 				</ul>
 			</li>
 			
@@ -86,13 +86,13 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: ObjectType</h1>
+	<h1 class="page-title">Class: ObjectProp</h1>
 <section>
 
 <header>
     
         <h2>
-        ObjectType
+        ObjectProp
         </h2>
         
     
@@ -105,7 +105,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="ObjectType"><span class="type-signature"></span>new ObjectType()</h4>
+    <h4 class="name" id="ObjectProp"><span class="type-signature"></span>new ObjectProp()</h4>
     
     
 </dt>
@@ -184,7 +184,7 @@ not defined will be removed from the final output object</p>
     
     <h5>Requires:</h5>
     <ul>
-        <li>module:help-gen/lib/prop/is-prop</li>
+        <li><a href="module-help-gen_lib_prop_is-prop.html">module:help-gen/lib/prop/is-prop</a></li>
     </ul>
     
 
@@ -211,7 +211,7 @@ not defined will be removed from the final output object</p>
 
 
     <ul>
-        <li><a href="Type.html">Type</a></li>
+        <li><a href="Prop.html">Prop</a></li>
     </ul>
 
 
@@ -221,7 +221,7 @@ not defined will be removed from the final output object</p>
         <h3 class="subsection-title">Requires</h3>
 
         <ul>
-            <li>module:help-gen/lib/prop/is-prop</li>
+            <li><a href="module-help-gen_lib_prop_is-prop.html">module:help-gen/lib/prop/is-prop</a></li>
         </ul>
     
 
@@ -273,7 +273,7 @@ conforms to the rules of the property definition</p>
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#allowNull">Type#allowNull</a>
+				<a href="Prop.html#allowNull">Prop#allowNull</a>
 			</li>
 		</ul>
 	</dd>
@@ -304,7 +304,7 @@ conforms to the rules of the property definition</p>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -344,7 +344,7 @@ conforms to the rules of the property definition</p>
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -450,7 +450,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#desc">Type#desc</a>
+				<a href="Prop.html#desc">Prop#desc</a>
 			</li>
 		</ul>
 	</dd>
@@ -481,7 +481,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -521,7 +521,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -543,7 +543,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -580,7 +580,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 
     
     <div class="description">
-        <p>Alias for <a href="Type.html#desc">desc</a></p>
+        <p>Alias for <a href="Prop.html#desc">desc</a></p>
     </div>
     
 
@@ -604,7 +604,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#description">Type#description</a>
+				<a href="Prop.html#description">Prop#description</a>
 			</li>
 		</ul>
 	</dd>
@@ -635,7 +635,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -647,7 +647,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
 	<dd class="tag-see">
 		<ul>
-			<li><a href="Type.html#desc">Type#desc</a></li>
+			<li><a href="Prop.html#desc">Prop#desc</a></li>
 			</ul>
 	</dd>
 	
@@ -757,7 +757,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#example">Type#example</a>
+				<a href="Prop.html#example">Prop#example</a>
 			</li>
 		</ul>
 	</dd>
@@ -788,7 +788,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -828,7 +828,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -884,7 +884,7 @@ A property that has a value of <code>undefined</code> will fail.</p>
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#optional">Type#optional</a>
+				<a href="Prop.html#optional">Prop#optional</a>
 			</li>
 		</ul>
 	</dd>
@@ -915,7 +915,7 @@ A property that has a value of <code>undefined</code> will fail.</p>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -955,7 +955,7 @@ A property that has a value of <code>undefined</code> will fail.</p>
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -1034,7 +1034,7 @@ reguardless if they have been defined or not</p>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_object.js.html">gh-pages/help-gen/prop/object.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -1074,7 +1074,7 @@ reguardless if they have been defined or not</p>
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -1180,7 +1180,7 @@ A dot separated object path can be used to quickly define nested object</p>
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#path">Type#path</a>
+				<a href="Prop.html#path">Prop#path</a>
 			</li>
 		</ul>
 	</dd>
@@ -1211,7 +1211,7 @@ A dot separated object path can be used to quickly define nested object</p>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -1251,7 +1251,7 @@ A dot separated object path can be used to quickly define nested object</p>
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -1283,7 +1283,22 @@ A dot separated object path can be used to quickly define nested object</p>
     
     <div class="description">
         <p>An array of Propery definitions that defines that genaerl schema the object must abide by
-If this function is not called, <a href="ObjectType.html#passthrough">passthrough</a> must be called.</p>
+If this function is not called, <a href="ObjectProp.html#passthrough">passthrough</a> must be called.
+It is possible to call <code>Prop.object().props(...)</code> with sub-properties whose
+parents only implicitly exist, e.g.</p>
+<pre class="prettyprint source lang-javascript"><code>[ Prop.someType().path('foo')
+     , Prop.someType().path('bar.baz')
+     , Prop.someType().path('bar.quux') ].
+// This function adds the missing parents, e.g. transforms the above into
+[ Prop.someType().path('foo')
+, Prop.object().path('bar').props([
+    Prop.someType().path('baz')
+  , Prop.someType().path('quux')
+  ])
+]</code></pre><p>Yields the following structure</p>
+<pre class="prettyprint source lang-javascript"><code>{ 'foo' => [ ]
+, 'bar' => [ Prop.someType().path('bar.baz')
+           , Prop.someType().path('bar.quux') ] }</code></pre>
     </div>
     
 
@@ -1324,7 +1339,7 @@ If this function is not called, <a href="ObjectType.html#passthrough">passthroug
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;<a href="Type.html">Type</a>></span>
+<span class="param-type">Array.&lt;<a href="Prop.html">Prop</a>></span>
 
 
 
@@ -1379,7 +1394,7 @@ If this function is not called, <a href="ObjectType.html#passthrough">passthroug
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_object.js.html">gh-pages/help-gen/prop/object.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -1419,7 +1434,7 @@ If this function is not called, <a href="ObjectType.html#passthrough">passthroug
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -1547,7 +1562,7 @@ If this function is not called, <a href="ObjectType.html#passthrough">passthroug
 	<dd class="inherited-from">
 		<ul class="dummy">
 			<li>
-				<a href="Type.html#required">Type#required</a>
+				<a href="Prop.html#required">Prop#required</a>
 			</li>
 		</ul>
 	</dd>
@@ -1578,7 +1593,7 @@ If this function is not called, <a href="ObjectType.html#passthrough">passthroug
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_prop_base.js.html">gh-pages/help-gen/prop/base.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -1618,7 +1633,7 @@ If this function is not called, <a href="ObjectType.html#passthrough">passthroug
     </dt>
     <dd>
         
-<span class="param-type"><a href="Type.html">Type</a></span>
+<span class="param-type"><a href="Prop.html">Prop</a></span>
 
 
 
@@ -1693,7 +1708,7 @@ Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-03-08T21:31:28-05:00
+		on 2018-03-09T09:02:16-06:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

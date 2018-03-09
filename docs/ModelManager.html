@@ -33,21 +33,21 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li>
+					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li><li><a href="module-help-gen_lib_prop_is-prop.html">help-gen/lib/prop/is-prop</a></li><li><a href="module-help-gen_lib_prop_symbols.html">help-gen/lib/prop/symbols</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="ArrayType.html">ArrayType</a></li><li><a href="DateType.html">DateType</a></li><li><a href="EmailType.html">EmailType</a></li><li><a href="EnumType.html">EnumType</a></li><li><a href="IPType.html">IPType</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberType.html">NumberType</a></li><li><a href="ObjectType.html">ObjectType</a></li><li><a href="Type.html">Type</a></li>
+					<li><a href="ArrayProp.html">ArrayProp</a></li><li><a href="DateProp.html">DateProp</a></li><li><a href="EmailProp.html">EmailProp</a></li><li><a href="EnumProp.html">EnumProp</a></li><li><a href="IPProp.html">IPProp</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberProp.html">NumberProp</a></li><li><a href="ObjectProp.html">ObjectProp</a></li><li><a href="Prop.html">Prop</a></li><li><a href="RefProp.html">RefProp</a></li><li><a href="RegexProp.html">RegexProp</a></li><li><a href="StringProp.html">StringProp</a></li><li><a href="UrlProp.html">UrlProp</a></li><li><a href="UUIDProp.html">UUIDProp</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
+					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop_.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
 				</ul>
 			</li>
 			
@@ -111,6 +111,11 @@
 </dt>
 <dd>
 
+    
+    <div class="description">
+        <p>Converts Model definitions into AST trees to generate
+static javascript files containing data model defintions</p>
+    </div>
     
 
     
@@ -334,6 +339,191 @@
         <h3 class="subsection-title">Methods</h3>
 
         <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="_addResult"><span class="type-signature">&lt;protected> </span>_addResult(name, filename, ast)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Converts an AST into final code and prepares it for export</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filename</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ast</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="gh-pages_help-gen_model.js.html">gh-pages/help-gen/model.js</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
             
 <hr>
 <dt>
@@ -709,7 +899,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-03-08T21:31:28-05:00
+		on 2018-03-09T09:02:16-06:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

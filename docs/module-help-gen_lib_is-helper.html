@@ -33,21 +33,21 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li>
+					<li><a href="module-help-gen_lib_is-helper.html">help-gen/lib/is-helper</a></li><li><a href="module-help-gen_lib_prop_is-prop.html">help-gen/lib/prop/is-prop</a></li><li><a href="module-help-gen_lib_prop_symbols.html">help-gen/lib/prop/symbols</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="ArrayType.html">ArrayType</a></li><li><a href="DateType.html">DateType</a></li><li><a href="EmailType.html">EmailType</a></li><li><a href="EnumType.html">EnumType</a></li><li><a href="IPType.html">IPType</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberType.html">NumberType</a></li><li><a href="ObjectType.html">ObjectType</a></li><li><a href="Type.html">Type</a></li>
+					<li><a href="ArrayProp.html">ArrayProp</a></li><li><a href="DateProp.html">DateProp</a></li><li><a href="EmailProp.html">EmailProp</a></li><li><a href="EnumProp.html">EnumProp</a></li><li><a href="IPProp.html">IPProp</a></li><li><a href="ModelManager.html">ModelManager</a></li><li><a href="NumberProp.html">NumberProp</a></li><li><a href="ObjectProp.html">ObjectProp</a></li><li><a href="Prop.html">Prop</a></li><li><a href="RefProp.html">RefProp</a></li><li><a href="RegexProp.html">RegexProp</a></li><li><a href="StringProp.html">StringProp</a></li><li><a href="UrlProp.html">UrlProp</a></li><li><a href="UUIDProp.html">UUIDProp</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
+					<li><a href="tutorial-data-models.html">Data Models</a></li><li><a href="tutorial-prop_.html">Property Types</a></li><li><a href="tutorial-validator.html">Generic Validators</a></li>
 				</ul>
 			</li>
 			
@@ -353,165 +353,6 @@ Array.isArray(user.avatar_url)</pre>
 
     
     <div class="description">
-        <p>Validate a string representing a v4 uuid</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>variable</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The name of the variable to be checked</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>ASTNode</p>
-</div>
-
-
-
-
-        
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">const {isUUID} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
-isUUID(&#x27;now&#x27;)
-
-// Generates
-const is = require(&#x27;@helpdotcom/is&#x27;)
-is.isUUID(now)</pre>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".isDate"><span class="type-signature">&lt;static> </span>isDate(variable)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
         <p>Validate a datelike string</p>
     </div>
     
@@ -654,6 +495,165 @@ isDate(&#x27;now&#x27;)
 // Generates
 const is = require(&#x27;@helpdotcom/is&#x27;)
 is.isDate(now)</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isDate"><span class="type-signature">&lt;static> </span>isDate(variable)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Validate a string representing a v4 uuid</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>variable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the variable to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>ASTNode</p>
+</div>
+
+
+
+
+        
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">const {isUUID} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isUUID(&#x27;now&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isUUID(now)</pre>
 
 
     
@@ -1349,7 +1349,7 @@ is.isUUID(now)</pre>
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-03-08T21:31:28-05:00
+		on 2018-03-09T09:02:16-06:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

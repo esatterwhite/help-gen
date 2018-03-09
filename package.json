@@ -12,7 +12,7 @@
     "test:strip-props": "env HELPGEN_STRIP_EXTRA_PROPS=1 npm run test:standard",
     "test:fail-props": "env HELPGEN_FAIL_EXTRA_PROPS=1 npm run test:standard",
     "posttest": "nyc report -r text-summary",
-    "docs": "jsdoc -c jsdoc.json"
+    "generate": "jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "@helpdotcom/build-ast": "^2.3.1",
