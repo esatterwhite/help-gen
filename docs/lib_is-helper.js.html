@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Help.com Code Gen Source: gh-pages/help-gen/model.js</title>
+	<title>Help.com Code Gen Source: lib/is-helper.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -86,31 +86,61 @@
 		<div id="main">
 			
 
-		<h1 class="page-title">Source: gh-pages/help-gen/model.js</h1>
+		<h1 class="page-title">Source: lib/is-helper.js</h1>
     
 <section>
     <article>
         <pre
-            class="sunlight-highlight-javascript ">
-module.exports = {}
+            class="sunlight-highlight-javascript ">'use strict'
 
 /**
- * Registers a new model
- * @method ModelManager#define
- * @param {ModelConfig} conf A model Definition
- * @return ModelConfig
+ * Utility functions for constructing generting AST block to check
+ * various prop types
+ * @module help-gen/lib/is-helper
+ * @author Evan Lucas
+ * @requires @helpdotcom/build-ast
  **/
 
-/**
- * Converts registered model configuration into an AST and generates javascript class representations
- * @method ModelManager#generate
- **/
+const Builder = require('@helpdotcom/build-ast')
 
-/**
- * Registers an array of {@link ModelConfig} to be generated
- * @protected
- * @method ModelManager#_loadConfigs
- **/
+function callFnWithName(name) {
+  return function(varName) {
+    return Builder.callFunction(`validators.${name}`, [
+      Builder.ast.objectPath(varName)
+    ])
+  }
+}
+
+const callIsDate = callFnWithName('isDate')
+exports.isDate = function isDate(varName) {
+  return callIsDate(varName)
+}
+
+const callIsEmail = callFnWithName('isEmail')
+exports.isEmail = function isEmail(varName) {
+  return callIsEmail(varName)
+}
+
+const callIsEmailAllowName = callFnWithName('isEmailAllowName')
+exports.isEmailAllowName = function isEmailAllowName(varName) {
+  return callIsEmailAllowName(varName)
+}
+
+const callIsUUID = callFnWithName('isUUID')
+exports.isUUID = function isUUID(varName) {
+  return callIsUUID(varName)
+}
+
+const callIsUrl = callFnWithName('isUrl')
+exports.isUrl = function isUrl(varName) {
+  return callIsUrl(varName)
+}
+
+exports.isArray = function isArray(varName) {
+  return Builder.callFunction('Array.isArray', [
+    Builder.ast.objectPath(varName)
+  ])
+}
 </pre>
     </article>
 </section>

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Help.com Code Gen Class: EnumType</title>
+	<title>Help.com Code Gen Module: help-gen/lib/is-helper</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -86,15 +86,10 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: EnumType</h1>
+	<h1 class="page-title">Module: help-gen/lib/is-helper</h1>
 <section>
 
 <header>
-    
-        <h2>
-        EnumType
-        </h2>
-        
     
 </header>
 
@@ -103,79 +98,11 @@
     <div class="container-overview">
     
         
-<hr>
-<dt>
-    <h4 class="name" id="EnumType"><span class="type-signature"></span>new EnumType(values)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Represents javascript string that is only allowed to be one of the
-specified values</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
+            <div class="description"><p>Utility functions for constructing generting AST block to check
+various prop types</p></div>
         
 
         
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>values</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;String></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>An array of allowable values</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
 <dl class="details">
     
 
@@ -217,7 +144,7 @@ specified values</p>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="lib_prop_enum.js.html">lib/prop/enum.js</a>
+				<a href="lib_is-helper.js.html">lib/is-helper.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -231,47 +158,9 @@ specified values</p>
 </dl>
 
 
-    
-    <h5>Requires:</h5>
-    <ul>
-        <li>module:help-gen/lib/prop/base</li>
-    
-        <li>module:help-gen/lib/prop/symbols</li>
-    </ul>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">Prop.enum([&#x27;a&#x27;, &#x27;b&#x27;]).path(&#x27;c&#x27;)</pre>
-
-
-    
-</dd>
-
     
     </div>
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-
-    <ul>
-        <li><a href="Type.html">Type</a></li>
-    </ul>
-
 
     
 
@@ -279,9 +168,7 @@ specified values</p>
         <h3 class="subsection-title">Requires</h3>
 
         <ul>
-            <li>module:help-gen/lib/prop/base</li>
-        
-            <li>module:help-gen/lib/prop/symbols</li>
+            <li>module:@helpdotcom/build-ast</li>
         </ul>
     
 
@@ -300,7 +187,7 @@ specified values</p>
             
 <hr>
 <dt>
-    <h4 class="name" id="allowNull"><span class="type-signature"></span>allowNull()</h4>
+    <h4 class="name" id=".isArray"><span class="type-signature">&lt;static> </span>isArray(variable)</h4>
     
     
 </dt>
@@ -308,135 +195,7 @@ specified values</p>
 
     
     <div class="description">
-        <p>Denotes that the property may be present and contain, specifically, a <code>null</code> value in addition to a value that
-conforms to the rules of the property definition</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#allowNull">Type#allowNull</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>this</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;).allowNull() // a is required and _can_ be null
-Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null</pre>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="desc"><span class="type-signature"></span>desc(text)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Denotes that the property must be or contain only unique values</p>
+        <p>Validate a variable is an array</p>
     </div>
     
 
@@ -471,7 +230,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 
         <tr>
             
-                <td class="name"><code>text</code></td>
+                <td class="name"><code>variable</code></td>
             
 
             <td class="type">
@@ -488,7 +247,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 
             
 
-            <td class="description last"><p>A breif description of the property</p></td>
+            <td class="description last"><p>The name of the variable to be checked</p></td>
         </tr>
 
     
@@ -505,15 +264,6 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#desc">Type#desc</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -541,7 +291,7 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -567,62 +317,25 @@ Prop.path(&#x27;b&#x27;).optional().allowNull() // b is optional or can be null<
 
     
     <h5>Returns:</h5>
-    <ul>
-            <li>
+    
+            
 <div class="param-desc">
-    <p>this</p>
+    <p>ASTNode</p>
 </div>
 
 
 
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
+
         
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
-
-</li>
-        
-            <li>
-<div class="param-desc">
-    <p>this</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
-
-</li>
-        </ul>
 
     
-        <h5>Examples</h5>
+        <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;).unique()
-Prop.path(&#x27;b&#x27;).optional().unique()
+    <pre class="sunlight-highlight-javascript">const {isUUID} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isUUID(&#x27;user.avatar_url&#x27;)
 
-/**
-Sets a description on the property. Primarily for generating documentation</pre>
-
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;).optiona.desc(&#x27;The letter a&#x27;)</pre>
+// Generates
+Array.isArray(user.avatar_url)</pre>
 
 
     
@@ -632,7 +345,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
             
 <hr>
 <dt>
-    <h4 class="name" id="description"><span class="type-signature"></span>description()</h4>
+    <h4 class="name" id=".isDate"><span class="type-signature">&lt;static> </span>isDate(variable)</h4>
     
     
 </dt>
@@ -640,110 +353,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 
     
     <div class="description">
-        <p>Alias for <a href="Type.html#desc">desc</a></p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#description">Type#description</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="Type.html#desc">Type#desc</a></li>
-			</ul>
-	</dd>
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="example"><span class="type-signature"></span>example(text)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Sets an example on the property. Primarily for generating documentationt</p>
+        <p>Validate a string representing a v4 uuid</p>
     </div>
     
 
@@ -778,7 +388,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 
         <tr>
             
-                <td class="name"><code>text</code></td>
+                <td class="name"><code>variable</code></td>
             
 
             <td class="type">
@@ -795,7 +405,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 
             
 
-            <td class="description last"><p>Sample value expected to be used to populate he property</p></td>
+            <td class="description last"><p>The name of the variable to be checked</p></td>
         </tr>
 
     
@@ -813,15 +423,6 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#example">Type#example</a>
-			</li>
-		</ul>
-	</dd>
-	
 
     
 
@@ -848,7 +449,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -877,23 +478,10 @@ Sets a description on the property. Primarily for generating documentation</pre>
     
             
 <div class="param-desc">
-    <p>this</p>
+    <p>ASTNode</p>
 </div>
 
 
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
 
 
         
@@ -901,7 +489,12 @@ Sets a description on the property. Primarily for generating documentation</pre>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;).exmaple(&#x27;a&#x27;)</pre>
+    <pre class="sunlight-highlight-javascript">const {isUUID} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isUUID(&#x27;now&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isUUID(now)</pre>
 
 
     
@@ -911,7 +504,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
             
 <hr>
 <dt>
-    <h4 class="name" id="optional"><span class="type-signature"></span>optional()</h4>
+    <h4 class="name" id=".isDate"><span class="type-signature">&lt;static> </span>isDate(variable)</h4>
     
     
 </dt>
@@ -919,136 +512,7 @@ Sets a description on the property. Primarily for generating documentation</pre>
 
     
     <div class="description">
-        <p>Denotes that the property is optional. If the property is present, it must conform to the rules of property.
-A property that has a value of <code>undefined</code> will fail.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#optional">Type#optional</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>this</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;).optional() // a is optional
-Prop.path(&#x27;b&#x27;) // b is required</pre>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="path"><span class="type-signature"></span>path(path)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Defines the location of the property to validate and validate.
-A dot separated object path can be used to quickly define nested object</p>
+        <p>Validate a datelike string</p>
     </div>
     
 
@@ -1083,7 +547,7 @@ A dot separated object path can be used to quickly define nested object</p>
 
         <tr>
             
-                <td class="name"><code>path</code></td>
+                <td class="name"><code>variable</code></td>
             
 
             <td class="type">
@@ -1100,7 +564,7 @@ A dot separated object path can be used to quickly define nested object</p>
 
             
 
-            <td class="description last"><p>The object path to the property.</p></td>
+            <td class="description last"><p>The name of the variable to be checked</p></td>
         </tr>
 
     
@@ -1117,15 +581,6 @@ A dot separated object path can be used to quickly define nested object</p>
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#path">Type#path</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -1153,7 +608,7 @@ A dot separated object path can be used to quickly define nested object</p>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -1182,23 +637,10 @@ A dot separated object path can be used to quickly define nested object</p>
     
             
 <div class="param-desc">
-    <p>this</p>
+    <p>ASTNode</p>
 </div>
 
 
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
 
 
         
@@ -1206,7 +648,12 @@ A dot separated object path can be used to quickly define nested object</p>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;)</pre>
+    <pre class="sunlight-highlight-javascript">const {isDate} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isDate(&#x27;now&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isDate(now)</pre>
 
 
     
@@ -1216,7 +663,7 @@ A dot separated object path can be used to quickly define nested object</p>
             
 <hr>
 <dt>
-    <h4 class="name" id="required"><span class="type-signature"></span>required( [value])</h4>
+    <h4 class="name" id=".isEmail"><span class="type-signature">&lt;static> </span>isEmail(variable)</h4>
     
     
 </dt>
@@ -1224,205 +671,7 @@ A dot separated object path can be used to quickly define nested object</p>
 
     
     <div class="description">
-        <p>Denotes that the property at the specified path must be preset. Required is the default behavior</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Argument</th>
-        
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>value</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Type.html#required">Type#required</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>this</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">Prop.path(&#x27;a&#x27;).required() // a is required
-Prop.path(&#x27;b&#x27;).required(false) // b is not required
-Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="values"><span class="type-signature"></span>values(values)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Defines or overrides the allowable values for a property</p>
+        <p>Validate a string representing an email address sans the name parts</p>
     </div>
     
 
@@ -1457,13 +706,13 @@ Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
 
         <tr>
             
-                <td class="name"><code>values</code></td>
+                <td class="name"><code>variable</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;String></span>
+<span class="param-type">String</span>
 
 
 
@@ -1474,7 +723,7 @@ Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
 
             
 
-            <td class="description last"><p>The allowable values for the property</p></td>
+            <td class="description last"><p>The name of the variable to be checked</p></td>
         </tr>
 
     
@@ -1518,7 +767,7 @@ Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="gh-pages_help-gen_prop.js.html">gh-pages/help-gen/prop.js</a>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
 			</li>
 		</ul>
 	</dd>
@@ -1547,23 +796,10 @@ Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
     
             
 <div class="param-desc">
-    <p>this</p>
+    <p>ASTNode</p>
 </div>
 
 
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Type.html">Type</a></span>
-
-
-
-    </dd>
-</dl>
 
 
         
@@ -1571,7 +807,489 @@ Prop.path(&#x27;c&#x27;).required(true) // c is required</pre>
     
         <h5>Example</h5>
         
-    <pre class="sunlight-highlight-javascript">Prop.enum().path(&#x27;a&#x27;).values([&#x27;b&#x27;, &#x27;c&#x27;])</pre>
+    <pre class="sunlight-highlight-javascript">const {isEmail} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isEmail(&#x27;email&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isEmail(email)</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isEmailAllowName"><span class="type-signature">&lt;static> </span>isEmailAllowName(variable)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Validate a string representing an email address with the name parts</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>variable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the variable to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>ASTNode</p>
+</div>
+
+
+
+
+        
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">const {isEmailAllowName} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isEmailAllowName(&#x27;now&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isEmailAllowName(now)</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isUrl"><span class="type-signature">&lt;static> </span>isUrl(variable)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Validate a string representing a url</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>variable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the variable to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>ASTNode</p>
+</div>
+
+
+
+
+        
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">const {isUUID} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isUUID(&#x27;user.avatar_url&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isUrl(user.avatar_url)</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isUUID"><span class="type-signature">&lt;static> </span>isUUID(variable)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Validate a string representing a v4 uuid</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>variable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the variable to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="gh-pages_help-gen_is-helper.js.html">gh-pages/help-gen/is-helper.js</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>ASTNode</p>
+</div>
+
+
+
+
+        
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">const {isUUID} = require(&#x27;@helpdotcom/help-gen/lib/is-helper&#x27;)
+isUUID(&#x27;now&#x27;)
+
+// Generates
+const is = require(&#x27;@helpdotcom/is&#x27;)
+is.isUUID(now)</pre>
 
 
     
